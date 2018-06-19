@@ -175,20 +175,25 @@ Bekanntgabe, dass das Material über gewisse Eigenschaften verfügt. (z.B. Drehz
 
 ## Qualitätsmerkmale
 
-Können allgemein gültig, d.h. daher für alle Materialien verwendet werden. Sie können aber auch sehr spezifisch sein.
-Was soll überprüft werden und wie soll das gewünschte Ergebnis aussehen? (z.B. Sitz soll sauber und nicht zerkratzt sein)
+Welche Eigenschaft soll überprüft werden und wie soll das gewünschte Ergebnis aussehen? (z.B. Sitz soll sauber und nicht zerkratzt sein) 
+Können allgemein gültig sein, d.h. für alle Materialien verwendet werden. Sie können aber auch sehr spezifisch sein.
 Einschränkungen über verschiedene Organisationseinheiten:
 - Werke
 - Lager
 - Produktionsabschnitte
 
+### Prüfarten
+
+- Qualitativ: entspricht bestimmten nicht-messbaren Kriterien (Sitz ist zerkratzt, verschmutzt, etc.)
+- Quantitativ: messbare Merkmale (bestimmte(s) Maß/Gewicht/Festigkeit wird eingehalten) (Reißprobe, Druckprobe, chemische Probe)
+
 ## Prüfplan
 
-Verknüpfen ein oder mehrere Qualitätsmerkmale mit einem Material.
-Alle Qualitätsmerkmale und die Zeitpunkte der Prüfungen werden für das gesamte Werk festgelegt.
+Ein Prüfplan verknüpft ein oder mehrere Qualitätsmerkmale mit einem Material.
+Alle Orte und Zeitpunkte der Prüfungen werden die gesamte Organisationseinheit (z.B. Werk) sowie den gesamten Prozess umfassend festgelegt.
 Z.B. Sitz muss nur während des Einbauens und vor der Auslieferung überprüft werden
 
-## Wo?
+## Typische Prüforte / Prüfabschnitte des Prozesses?
 
 - **Materialeingang**
 - Produktion
@@ -205,25 +210,20 @@ Z.B. Sitz muss nur während des Einbauens und vor der Auslieferung überprüft w
 
 ## Optische Sichtkontrolle
 
-Eine optische Sichtkontrolle (beschädigte Verpackung) ist ebenfalls eine Qualitätskontrolle --> Vormerk erstellen
-
-## Prüfarten
-
-- Qualitativ: entspricht bestimmten nicht-messbaren Kriterien (Sitz ist zerkratzt, verschmutzt, etc.)
-- Quantitativ: messbare Merkmale (bestimmte(s) Maß/Gewicht/Festigkeit wird eingehalten) (Reißprobe, Druckprobe, chemische Probe)
+Eine Kontrolle auf beschädigte Verpackung (optische Sichtkontrolle) ist ebenfalls eine Qualitätskontrolle --> Vormerk erstellen
 
 ## Bestandsart
 
-Legt fest, wie viel von einem Material sich in welchem Zustand befindet (z.B. in Transit, auf Lager, Qualitätsprüfbestand, ...).
+Legt fest in welchem Lagerzustand sich das Material befindet befindet (z.B. in Transit, auf Lager, Qualitätsprüfbestand, ...).
 
 ### Qualitätsprüfbestand
 
-Ware ist im Werk/Lager vorhanden, aber **nicht verfügbar**.
+Ware ist physisch im Werk/Lager vorhanden, aber **nicht verfügbar**.
 Nicht frei umbuchbar, es muss eine Qualitätsprüfung und ein Verwendungsentscheid erfolgen.
 
 ## Verwendungsentscheid
 
-Ergebnis der Qualitätsprüfung.
+Ist das Ergebnis der Qualitätsprüfung und gibt an, was mit dem geprüften Material passiert.
 
 ### Positiver Verwendungsentscheid
 
@@ -231,8 +231,8 @@ Material wird in den regulären Bestand übernommen.
 
 ### Negativer Verwendungsentscheid
 
-Es muss eine Entscheidung über die Verwendung erfolgen.
-Z.B. Übernahme in B-Ware, ...
+Es muss eine manuelle Entscheidung über die Verwendung erfolgen.
+Z.B. Übernahme in B-Ware, Rücksendung, ...
 
 # MRP und MRP2
 
