@@ -306,10 +306,13 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
 1. Bedarfsermittlung
   - Wer benötigt etwas? Für wie viele Stellen muss ich disponieren?
   - Was wird benötigt?
+  - In welcher Quantität und Qualität wird es benötigt?
+  - Wann wird es benötigt?
 2. Bezugsquellenfindung
   - Sammeln von Informationen / Aussenden von Anfragen / Einholen von Angeboten
   - Wo bekomme ich die Materialien?
   - Zu welchen Konditionen? Welche Materialien?
+  - Welche Erstzmaterialien?
 3. Lieferantenauswahl
   - Lieferbedingungen
   - Kriterien der Auswahl (z.B. Orderbuch)
@@ -317,7 +320,7 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
   - formeller Akt der Bestellung
   - **Bestätigungsverfahren**
     - Auftragsbestätigung einholen (wichtig um Verständnis des Lieferanten von der Bestellung zu überprüfen --> Reaktionsmöglichkeiten)
-    - sonstige Dokumente einholen
+    - sonstige Dokumente (Einfuhrbestimmungen) einholen
 5. Bestellüberwachung
   - Kann der Lieferant die Bestellkriterien einhalten?
   - Kann der Lieferant gemäß den Kritieren der Logistik liefern?
@@ -328,15 +331,17 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
     - Datenfluss vor Materialfluss
     - Voreinspeisung der Informationen ins System
     - bessere Disponierungsmöglichkeiten
+      - Lagerplatz
+      - Personaleinteilung
+      - Umgang mit gefährlichen Gütern
 6. Wareneingang
   - Prüfen, ob man der tatsächliche Warenempfänger ist (z.B. Lieferung auf Baustelle)
-  - Vollständigkeit der Daten vorhanden
-  - Prüfung Warenempfänger
-  - Prüfung **Quantität und Qualität**
+  - Vollständigkeit der Daten?
+  - Prüfung **Quantität und Qualität**, sofern möglich
     - mit Vorbehalt übernehmen
   - optische Prüfung (Sichtkontrolle)
   - Daten werden für **Lieferantenbeurteilung** verwendet
-  - Daten werden üblicherweise mit Vorbehalt übernommen --> weitgehend akzeptiert
+  - Materialien werden üblicherweise mit Vorbehalt übernommen --> weitgehend akzeptiert
   - großes Verbesserungspotential mit automatisierter Datenerfassung (Barcode, QR-Code, NFC-Tags)
   - Wareneingangbearbeitungszeit
     - Gibt es Materialien, die bestimmten Anforderungen unterliegen? z.B. Lebensmittel, Pharmazeutika, gefährliche Materialien --> **Lagervorschriften**
@@ -344,10 +349,10 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
       - **Prüfung --> Prüfungsergebnis --> Verwendungsentscheid**
 	- evtl. Buchung in den Zollbestand
 7. Rechnungsprüfung
-  - Bestellnummer/Lieferscheinnummer suchen
+  - Bestellnummer/Lieferscheinnummer prüfen und nachverfolgen
     - bei Nichtvorhandensein bis zum letzten Tag warten und erst zum letzten Zeitpunkt Meldung an den Kunden --> Zeit wird gewonnen
-  - Ist die Rechnung einer Bestellung zuordbar?
-  - Stimmt die Rechnung mit dem Lieferschein überein? --> **Wareneingangsbezogene Rechnungsprüfung**
+  - Kann die Rechnung einer Bestellung zugeordnet werden?
+  - Stimmt die Rechnung mit dem Lieferschein und den eingetroffenen Materialien überein? --> **Wareneingangsbezogene Rechnungsprüfung**
     - (System kontrolliert automatisch): Bei Diskrepanzen wird die Rechnung gesperrt
     - System erfordert Bestätigung --> Abklärung der Differenz
     - Alternative: Schwellenwert kann gesetzt werden
@@ -362,7 +367,7 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
   - Mahnung schicken
   - Miteinkalkulieren des ungerechtfertigten Rabbates
 
-**In umgekehrter Reihenfolge im Vertrieb**.
+**Die Reihenfolge im Vertrieb ist analog**.
   
 ## Wodurch kann ein Bedarf entstehen?
 
@@ -374,11 +379,11 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
 ## Rechnung erfassen
 
 Bestellnummer und Betrag eingeben, um **wareneingangsbezogene Rechnungsprüfung** anzustoßen.
-Bei Unstimmigkeiten wird die **Rückstandsbehandlung** angestossen. Hierfür wird der Einkaufswerteschlüssel herangezogen.
+Bei Unstimmigkeiten wird die **Rückstandsbehandlung** angestoßen. Hierfür wird der Einkaufswerteschlüssel herangezogen.
 
 ### Wareneingangsbezogene Rechnungsprüfung
 
-Die eingegebene Summe muss dem Wert der Einzelosten der Bestellungen (Menge * Preis pro Stück) entsprechen.
+Die eingegebene Summe muss dem Wert der Einzelposten der Bestellungen (Menge * Preis pro Stück) entsprechen.
 Differenzen könnten aufgrund von ungeplanten Bezugsnebenkosten oder Fehler des Lieferanten entstehen.
 
 #### Behandlung von Unstimmigkeiten
@@ -409,13 +414,13 @@ Der Einkauf kann mittels des **Orderbuches** auf die Kennzahlen zugreifen.
 ### Orderbuch
 
 Pro Material kann eingetragen, wer liefern darf und wer bestimmt **nicht** liefern (Sperre) darf.
-Das Orderbuch verhindert Bestellungen von unerwünschten Materialien.
-Ein Lieferant kann aber auch aufgrund eines laufenden Insolvenzverfahrens gesperrt werden.
+Das Orderbuch verhindert somit unter anderem Bestellungen von unerwünschten Lieferanten.
+Ein laufendes Insolvenzverfahren ist ebenfalls ein möglicher Sperrgrund.
 Beim Orderbuch handelt es sich um eine Blacklist.
 
 #### Quotierung
 
-Bei mehreren Lieferanten im Orderbuch festgelegt werden, welche Lieferanten wie viele Stück (z.B. in Prozent) pro Auftrag liefern.
+Bei mehreren Lieferanten im Orderbuch festgelegt werden, welche Lieferanten welchen Anteil (z.B. in Prozent) pro Auftrag liefern.
 
 ## Belegnavigation
 
