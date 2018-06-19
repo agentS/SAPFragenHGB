@@ -247,47 +247,48 @@ Z.B. Übernahme in B-Ware, Rücksendung, ...
 # Konditionen
 
 Allgemeine Bedingungen --> **Konditionstechnik**
+
 Können auch Zuschläge sein (Transportzuschlag, Legierungszuschlag bei Edelmetallen).
 
 ## Konditionstechnik
 
-System führt das folgende Prozedere aus:
+System ermittelt alle Konditionen und deren Wirkung anhand des folgenden Schemas:
 
 1. Gibt es Konditionen?
 2. Trifft die Kondition zu?
 3. Ist die Konition gültig? (Zeitraum, Kunde, ...)
-4. Wie sieht die Kondition aus?
+4. Welche Auswirkungen hat die Kondition?
 
 Der Vorschlagswert kann überschrieben werden, es können z.B. Konditionen in der Höhe geändert werden oder ganz entfernt werden.
 
-Die Konditionstechnik ist ein zentrales Element von SAP und gilt nicht nur für Rabatte und Konditionen sondern auch für **Nachrichten** und **Stammdaten**.
+Die Konditionstechnik ist ein zentrales Element von SAP und gilt nicht nur für Rabatte, Zuschläge, Versandkosten, Steuern, etc. sondern analog auch für **Nachrichten** und **Stammdaten**.
 
 ## Kopfkonditionen
 
-Eine Kopfkondition wird auf alle Positionen angewandt.
+Eine Kopfkondition wird auf alle Positionen eines Beleges angewandt.
 
 - Arbeitserleichterung
 - Fehlerminimierung
 
 ## Positionskonditionen
 
-Eine Positionskondition ist nur für eine Position einer Rechnung gültig.
+Eine Positionskondition ist nur für eine Position eines Beleges gültig.
 
 - flexibler
 
 ## Staffelrabbat
 
-Macht Preislisten mit Staffelrabbaten und manuellem Lookup obsolet
+Mit steigender Menge nehmen die Kosten für ein einzelnes Stück des Materials ab. Schwellenwerte sind die Staffeln
 
-Ab 1 Stück kostet mich das Einzelstück €305
-Ab 10 Stück kostet mich das Einzelstück €295
-Ab 30 Stück kostet mich das Einzelstück €285
+Ab 1 Stück kostet mich das Einzelstück €305, ab 10 Stück kostet mich das Einzelstück €295, ab 30 Stück kostet mich das Einzelstück €285
+
+Macht Preislisten mit Staffelrabbaten und manuellem Lookup obsolet
 
 ## Naturalrabatt
 
-Draufgabe: 100 Stück werden bestellt und 105 Stück geliefert
-Dreingabe: 100 Stück werden bestellt und nur 95 Stück müssen bezahlt werden
-Muss nicht das gleiche Produkt sein, z.B. Mountainbike und gratis Urlaubsgutschein
+- Draufgabe: 100 Stück werden bestellt und 105 Stück geliefert
+- Dreingabe: 100 Stück werden bestellt und nur 95 Stück müssen bezahlt werden
+- Muss nicht das gleiche Produkt sein, z.B. Mountainbike und gratis Urlaubsgutschein
 
 ## Substitut
 
@@ -306,7 +307,7 @@ Umsatzsteuer ist auch eine Kondition. Diese kann unter bestimmten Umständen ent
   - Wer benötigt etwas? Für wie viele Stellen muss ich disponieren?
   - Was wird benötigt?
 2. Bezugsquellenfindung
-  - Sammeln von Informationen/Einholen von Angeboten
+  - Sammeln von Informationen / Aussenden von Anfragen / Einholen von Angeboten
   - Wo bekomme ich die Materialien?
   - Zu welchen Konditionen? Welche Materialien?
 3. Lieferantenauswahl
