@@ -237,12 +237,11 @@ Z.B. Übernahme in B-Ware, Rücksendung, ...
 # MRP und MRP2
 
 1. MRP - einstufig, nur das direkt benötigte Material wird disponiert
-2. MRP2 - Produktionsstückliste wird aufgeflöst, benötigte Unterprodukte werden miteinbezogen
+2. MRP2 - Produktionsstückliste wird aufgeflöst, benötigte Unterprodukte werden miteinbezogen, Kapazitäten der Produktionsanlagen werden terminiert, etc.
 
 ## Ergebnisse
 
-1. Bestellanforderung --> wird zu Bestellung
-  - Prozess kann vollständig automatisiert werden
+1. Bestellanforderung --> wird zu Bestellung (Prozess kann vollständig automatisiert werden)
 2. Planauftrag --> wird zu Fertigungsauftrag (hilfreich bei Unterkapazitäten normalerweise selbst hergestellter Produkte)
 
 # Konditionen
