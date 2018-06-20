@@ -452,12 +452,12 @@ Die Informationen werden normalerweise in die Bilanz übernommen.
 
 ### Permanente Inventur
 
-Die Inventur wird laufend durchgeführt. Die Dinge werden nach bestimmten Kriterien unterschiedlich oft inspiziert.
+Die Inventur wird laufend über das Jahr verteilt durchgeführt und es wird der gesamte Bestand eines oder mehrerer, aber nicht aller Materialien erfasst.
 
-### Cycle Counting
+#### Cycle Counting
 
-In bestimmten, sehr kurzen Intervallen, z.B. wöchentlich oder monatlich.
-+ Differenzen sind wesentlich rascher erkennbar --> raschere Reaktionszeit
+Eine Abwandlung der permanenten Inventur, bei der in bestimmten, sehr kurzen Intervallen, z.B. täglich,  wöchentlich oder monatlich gezählt wird.
++ Differenzen sind wesentlich rascher erkennbar --> geringere Reaktionszeit
 
 ### Stichprobeninventur
 
